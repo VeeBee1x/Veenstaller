@@ -32,7 +32,7 @@ applications = [
     {"url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64", "file_name": "discord.exe", "silent_flag": "/S"},
     {"url": "https://download.scdn.co/SpotifySetup.exe", "file_name": "spotify.exe", "silent_flag": "/S"},
     {"url": "https://laptop-updates.brave.com/latest/winx64", "file_name": "brave.exe", "silent_flag": "/S"},
-    {"url": "https://dl.google.com/chrome/install/standalone/ChromeStandaloneSetup64.exe", "file_name": "chrome.exe", "silent_flag": "/silent /install"},
+    {"url": "https://github.com/VeeBee1x/Veenstaller/raw/main/ChromeSetup.exe", "file_name": "ChromeSetup.exe", "silent_flag": "/silent /install"},
     {"url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe", "file_name": "steam.exe", "silent_flag": "/S"},
     {"url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi", "file_name": "epicgames.msi", "silent_flag": "/quiet"},
     {"url": "https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.exe", "file_name": "vencord.exe", "silent_flag": "/S"},
@@ -41,7 +41,7 @@ applications = [
     {"url": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe", "file_name": "ghub.exe", "silent_flag": "/silent"},
     {"url": "https://rzr.to/synapse-3-pc-download", "file_name": "synapse.exe", "silent_flag": "/silent"},
     {"url": "https://download.overwolf.com/install/Download?PartnerId=3986", "file_name": "r6tracker.exe", "silent_flag": "/silent"},
-    {"url": "https://github.com/VeeBee1x/Veenstaller/blob/main/bookmarks_22_05_2024.html", "file_name": "bookmarks.html", "silent_flag": "/silent"}
+    {"url": "https://raw.githubusercontent.com/VeeBee1x/Veenstaller/main/bookmarks_22_05_2024.html?token=GHSAT0AAAAAACSU4PQ2UKSLF4USPKL55TZYZSQUDAA", "file_name": "bookmarks.html", "silent_flag": "/silent"}
 ]
 
 # Download and install each application
