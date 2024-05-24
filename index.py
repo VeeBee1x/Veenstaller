@@ -18,21 +18,21 @@ def install_application(installer_path, silent_flag):
         print(f"The path {installer_path} is not a file")
         return
 
-    try:
-        subprocess.run([installer_path, silent_flag], check=True)
+    try: 
+        subprocess.run([installer_path, silent_flag], check=True)  
         print(f"Successfully installed {installer_path}")
     except subprocess.CalledProcessError as e:
         print(f"Failed to install {installer_path}. Error: {e}")
     except OSError as e:
         print(f"OS error occurred while installing {installer_path}. Error: {e}")
 
-# List of applications with their download URLs, destination file names, and silent install flags
 applications = [
+    {"url": "https://www.actatekusa.com/downloads/ChromeSetup.exe", "file_name": "chromesetup.exe", "silent_flag": "/silent"},
     {"url": "https://github.com/stefansundin/superf4/releases/download/v1.4/SuperF4-1.4.exe", "file_name": "superf4.exe", "silent_flag": "/S"},
     {"url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64", "file_name": "discord.exe", "silent_flag": "/S"},
     {"url": "https://download.scdn.co/SpotifySetup.exe", "file_name": "spotify.exe", "silent_flag": "/S"},
     {"url": "https://laptop-updates.brave.com/latest/winx64", "file_name": "brave.exe", "silent_flag": "/S"},
-    {"url": "https://github.com/VeeBee1x/Veenstaller/raw/main/ChromeSetup.exe", "file_name": "ChromeSetup.exe", "silent_flag": "/silent /install"},
+    {"url": "https://rzr.to/synapse-3-pc-download", "file_name": "razer.exe", "silent_flag": "/silent /install"},
     {"url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe", "file_name": "steam.exe", "silent_flag": "/S"},
     {"url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi", "file_name": "epicgames.msi", "silent_flag": "/quiet"},
     {"url": "https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.exe", "file_name": "vencord.exe", "silent_flag": "/S"},
@@ -41,17 +41,19 @@ applications = [
     {"url": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe", "file_name": "ghub.exe", "silent_flag": "/silent"},
     {"url": "https://rzr.to/synapse-3-pc-download", "file_name": "synapse.exe", "silent_flag": "/silent"},
     {"url": "https://download.overwolf.com/install/Download?PartnerId=3986", "file_name": "r6tracker.exe", "silent_flag": "/silent"},
-    {"url": "https://raw.githubusercontent.com/VeeBee1x/Veenstaller/main/bookmarks_22_05_2024.html?token=GHSAT0AAAAAACSU4PQ2UKSLF4USPKL55TZYZSQUDAA", "file_name": "bookmarks.html", "silent_flag": "/silent"}
+    {"url": "https://raw.githubusercontent.com/VeeBee1x/Veenstaller/main/bookmarks_22_05_2024.html?token=GHSAT0AAAAAACSU4PQ2UKSLF4USPKL55TZYZSQUDAA", "file_name": "bookmarks.html", "silent_flag": "/silent"},
+    {"url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.1.2-Full-Installer-x64.exe", "file_name": "obs-studio.exe", "silent_flag": "/silent"},
+    {"url": "https://www.roblox.com/download/client?os=win", "file_name": "roblox.exe", "silent_flag": "/silent"},
+    {"url": "https://github.com/pizzaboxer/bloxstrap/releases/download/v2.5.4/Bloxstrap-v2.5.4.exe", "file_name": "bloxstrap.exe", "silent_flag": "/silent"}
+    
 ]
 
-# Download and install each application
+
 for app in applications:
     download_url = app["url"]
     installer_path = app["file_name"]
     silent_flag = app["silent_flag"]
     
-    # Download the installer
     download_file(download_url, installer_path)
     
-    # Install the application
     install_application(installer_path, silent_flag)
