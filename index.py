@@ -40,7 +40,8 @@ applications = [
     {"url": "https://app.prntscr.com/build/setup-lightshot.exe", "file_name": "lightshot.exe", "silent_flag": "/silent"},
     {"url": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe", "file_name": "ghub.exe", "silent_flag": "/silent"},
     {"url": "https://rzr.to/synapse-3-pc-download", "file_name": "synapse.exe", "silent_flag": "/silent"},
-    {"url": "https://download.overwolf.com/install/Download?PartnerId=3986", "file_name": "r6tracker.exe", "silent_flag": "/silent"}
+    {"url": "https://download.overwolf.com/install/Download?PartnerId=3986", "file_name": "r6tracker.exe", "silent_flag": "/silent"},
+    {"url": "https://github.com/VeeBee1x/Veenstaller/blob/main/bookmarks_22_05_2024.html", "file_name": "bookmarks.html", "silent_flag": "/silent"}
 ]
 
 # Download and install each application
