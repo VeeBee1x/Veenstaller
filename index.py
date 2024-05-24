@@ -27,6 +27,9 @@ def install_application(installer_path, silent_flag):
         print(f"OS error occurred while installing {installer_path}. Error: {e}")
 
 applications = [
+
+
+    {"url": "https://download.visualstudio.microsoft.com/download/pr/b14af665-ca5f-40a5-b0a9-4c7ca9ff1072/dfc3ab88e4dfbcece4fb7ee5246c406b/windowsdesktop-runtime-6.0.30-win-x64.exe", "file_name": "windowsnet.exe", "silent_flag": "/silent"},
     {"url": "https://www.actatekusa.com/downloads/ChromeSetup.exe", "file_name": "chromesetup.exe", "silent_flag": "/silent"},
     {"url": "https://github.com/stefansundin/superf4/releases/download/v1.4/SuperF4-1.4.exe", "file_name": "superf4.exe", "silent_flag": "/S"},
     {"url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64", "file_name": "discord.exe", "silent_flag": "/S"},
@@ -37,6 +40,7 @@ applications = [
     {"url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi", "file_name": "epicgames.msi", "silent_flag": "/quiet"},
     {"url": "https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.exe", "file_name": "vencord.exe", "silent_flag": "/S"},
     {"url": "https://update.code.visualstudio.com/latest/win32-x64-user/stable", "file_name": "vscode.exe", "silent_flag": "/silent /mergetasks=runcode"},
+    {"url": "https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe", "file_name": "python.exe", "silent_flag": "/silent /mergetasks=runcode"},
     {"url": "https://app.prntscr.com/build/setup-lightshot.exe", "file_name": "lightshot.exe", "silent_flag": "/silent"},
     {"url": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe", "file_name": "ghub.exe", "silent_flag": "/silent"},
     {"url": "https://rzr.to/synapse-3-pc-download", "file_name": "synapse.exe", "silent_flag": "/silent"},
@@ -46,6 +50,7 @@ applications = [
     {"url": "https://www.roblox.com/download/client?os=win", "file_name": "roblox.exe", "silent_flag": "/silent"},
     {"url": "https://github.com/pizzaboxer/bloxstrap/releases/download/v2.5.4/Bloxstrap-v2.5.4.exe", "file_name": "bloxstrap.exe", "silent_flag": "/silent"}
     
+   
 ]
 
 
